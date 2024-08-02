@@ -1,0 +1,27 @@
+POST http://localhost:3333/videos
+Content-Type: application/json 
+
+{
+    "title": "Videozin",
+    "description": "Esse é o primeiro video",
+    "duration": 180
+}
+
+###
+
+GET http://localhost:3333/videos
+
+### 
+
+PUT http://localhost:3333/videos/2b3fe352-3e2f-4fc1-bf77-13ddc9b528fe
+Content-Type: application/json 
+
+{
+    "title": "Video atualizado",
+    "description": "Esse é o video que atualizei",
+    "duration": 100
+}
+
+###
+DELETE http://localhost:3333/videos/37f90601-cca4-4e49-8c69-e23fa3481eaf
+Content-Type: application/json 
